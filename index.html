@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeFast - Create Your Coin</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <header class="bg-gray-900 px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-semibold flex items-center space-x-2">
+            <span class="text-purple-500">Meme</span><span>Fast</span>
+        </div>
+        <nav class="space-x-6">
+            <a href="/" class="text-gray-400 hover:text-purple-500">Create Coin</a>
+            <a href="" class="text-gray-400 hover:text-purple-500">Manage Liquidity</a>
+            <a href="" class="text-gray-400 hover:text-purple-500">Copy Trending Coins</a>
+        </nav>
+        <button class="bg-purple-500 text-white px-4 py-2 rounded-lg" data-bs-toggle="modal" data-bs-target="#walletModal">Select Wallet</button>
+    </header>
+
+    <main class="px-6 py-12">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-purple-500">Create Your Own Coin FAST <span class="text-yellow-400">⚡</span></h1>
+            <p class="text-lg mt-4">Launch your own coin on Solana in seconds. No coding required.</p>
+        </section>
+
+        <section class="text-center mb-12">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md max-w-md mx-auto">
+                <p class="mb-6">Please connect your wallet to create a token</p>
+                <button class="bg-purple-500 text-white px-6 py-3 rounded-full" data-bs-toggle="modal" data-bs-target="#walletModal">Connect Wallet</button>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-center mb-6">How to use Solana Token Creator</h2>
+            <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-lg shadow-md">
+                <ol class="list-decimal list-inside space-y-4 text-lg">
+                    <li>Connect your Solana wallet.</li>
+                    <li>Write the name you want for your Token.</li>
+                    <li>Indicate the symbol (max 8 characters).</li>
+                    <li>Write the description for your SPL Token.</li>
+                    <li>Upload the image for your token (PNG).</li>
+                    <li>Put the supply of your Token.</li>
+                    <li>Click on Create, accept the transaction, and wait until your token is ready.</li>
+                </ol>
+                <p class="mt-4 text-sm text-gray-400">The cost of creating the Token is 0.1 SOL, which includes all fees needed for the SPL Token creation.</p>
+                <p class="mt-2 text-sm text-gray-400">The creation process will start and take a few seconds. After that, you will receive the total supply of the token in the wallet you chose.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md space-y-4">
+                <div class="border-b border-gray-600 py-4">
+                    <button class="w-full text-left text-lg font-medium">What is Solana, and why should I launch my token on it?</button>
+                </div>
+                <div class="border-b border-gray-600 py-4">
+                    <button class="w-full text-left text-lg font-medium">How can I create a token on the Solana blockchain?</button>
+                </div>
+                <div class="border-b border-gray-600 py-4">
+                    <button class="w-full text-left text-lg font-medium">What are the steps to deploy my own token on Solana?</button>
+                </div>
+                <div class="border-b border-gray-600 py-4">
+                    <button class="w-full text-left text-lg font-medium">How can I manage token authorities on Solana?</button>
+                </div>
+                <div class="py-4">
+                    <button class="w-full text-left text-lg font-medium">What platforms can assist with launching a token on Solana?</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-center py-6">
+        <p class="text-sm text-gray-400">© 2025 memefast.com | All Rights Reserved</p>
+    </footer>
+<!-- Wallet Connection Modal -->
+    <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="walletModalLabel">Connect a Wallet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <center><p>Connect a wallet on Solana to continue</p></center>
+                    <div class="d-flex align-items-center" style="justify-content: center;">
+                        <img src="img/1024px-Phantom_logo.svg.png" alt="Phantom Wallet" width="30" height="30" class="me-2">
+                        <span style="margin-right: 15.5rem !important;">Phantom</span><span class="ms-2 text">Detected</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="creat.html"><button type="button" class="btn btn-primary" >Connect Wallet</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
