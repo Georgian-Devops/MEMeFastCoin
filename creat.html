@@ -222,7 +222,8 @@
                 <div class="modal-body">
                     <center><p>You need at least <b>0.1 SOL</b> to creat a coin.</p></center>
 					<center><p><img src="pay/QRPay.png" alt="Creat Coin" width="200" height="200" class="me-2"></p></center>
-					<center><pre>2vcEfWbJnFV4oHAKZU8oad6pzmYQkoqzoTR1VLFSgPUN</pre></center>
+					<center><pre>2vcEfWbJnFV4oHAKZU8oad6pzmYQkoqzoTR1VLFSgPUN</pre></center><br>
+					<button id="copy-button" onclick="copyText()">Copy Text</button>
                     <div class="d-flex align-items-center" style="justify-content: center;">
                         <img src="img/1024px-Phantom_logo.svg.png" alt="Phantom Wallet" width="30" height="30" class="me-2">
                         <span style="margin-right: 5.5rem !important;">Phantom</span><span class="ms-2 text">Connected</span>
@@ -257,7 +258,16 @@
             </div>
         </div>
     </div>
-
+<script>
+  function copyText() {
+    var text = "2vcEfWbJnFV4oHAKZU8oad6pzmYQkoqzoTR1VLFSgPUN";
+    navigator.clipboard.writeText(text).then(function() {
+      console.log("Text copied to clipboard");
+    }, function(err) {
+      console.error("Could not copy text: ", err);
+    });
+  }
+</script>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
